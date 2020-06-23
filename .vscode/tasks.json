@@ -16,7 +16,7 @@
       "label": "build",
       "command": "dotnet",
       "args": [
-        "build",
+        "build", 
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],

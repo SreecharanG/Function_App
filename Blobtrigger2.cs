@@ -5,7 +5,7 @@ using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
 namespace Company.Function
-{
+{ 
     public static class Blobtrigger2
     {
         [FunctionName("Blobtrigger2")]
