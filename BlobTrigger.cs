@@ -10,9 +10,9 @@ namespace Company.Function
     {
         [FunctionName("BlobTrigger")]
         public static void Run(
-            [BlobTrigger("demo/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream myBlob, 
-            [BlobTrigger("output/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream outputBlob, 
-            string name, 
+            [BlobTrigger("demo/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream myBlob,
+            [Blob("output/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream outputBlob, 
+            string name,
             ILogger log)
         {
             var length = myBlob.Length;
