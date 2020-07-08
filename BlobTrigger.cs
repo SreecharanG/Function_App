@@ -12,6 +12,7 @@ namespace Company.Function
         public static void Run(
             [BlobTrigger("demo/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream myBlob,
             [Blob("output/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream outputBlob, 
+            [Blob("input/{name}", Connection = "storageaccountvpcar92f4_STORAGE")]Stream outputBlob,
             string name,
             ILogger log)
         {
